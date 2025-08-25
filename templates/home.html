@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +6,31 @@
   <title>Abby's Career Page</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="#">ACp</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="btn btn-outline-light" href="/apply">Apply</a>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="/">Abby Careers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/apply">Apply</a></li>
+        <li class="nav-item"><a class="nav-link" href="mailto:abigailelaho@gmail.com">Contact</a></li>
+
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+
 
   <!-- Hero Section -->
   <section class="hero-custom text-center py-5">
@@ -28,7 +38,7 @@
       <h1 class="display-4">Careers</h1>
       <p class="lead">Join our team and build something amazing with us.</p>
       <div class="hero-image mt-4">
-        <!-- <img src="image 2.jpg" alt="Teamwork" class="img-fluid rounded"> -->
+        <!-- <img src="image 2.jpg" alt="Teamwork" class="img-fluid rounded"> incase i later want to add a picture  -->
       </div>
     </div>
   </section>
@@ -43,6 +53,8 @@
             <h5 class="card-title">Frontend Developer</h5>
             <p class="card-text">Build beautiful interfaces with HTML, CSS, and JavaScript.</p>
             <p class="text-muted">Location: Ikorodu</p>
+              <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
           </div>
         </div>
       </div>
@@ -52,6 +64,8 @@
             <h5 class="card-title">Backend Developer</h5>
             <p class="card-text">Work with databases and server-side logic.</p>
             <p class="text-muted">Location: Magodo</p>
+             <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
           </div>
         </div>
       </div>
@@ -61,6 +75,8 @@
             <h5 class="card-title">Data Analyst</h5>
             <p class="card-text">Sort and present modules and databases.</p>
             <p class="text-muted">Location: Enugu</p>
+             <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
           </div>
         </div>
       </div>
@@ -70,6 +86,8 @@
             <h5 class="card-title">UI/UX Developer</h5>
             <p class="card-text">Strong skills with models such as Figma.</p>
             <p class="text-muted">Location: Abuja</p>
+             <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
           </div>
         </div>
       </div>
@@ -79,15 +97,21 @@
             <h5 class="card-title">Product Manager</h5>
             <p class="card-text">Organise the team efficiently.</p>
             <p class="text-muted">Location: Ikoyi</p>
+             <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
+
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
+         <!-- <div class="col-12"></div>  to make it row by row but it looks weird that way -->
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Lab Assistant</h5>
             <p class="card-text">Support Staff.</p>
             <p class="text-muted">Location: Kogi</p>
+             <a href="/apply" class="btn btn-dark w-100 mt-2">Apply</a>
+
           </div>
         </div>
       </div>
@@ -95,17 +119,31 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="bg-light text-center py-5">
-    <div class="container">
-      <h2 class="mb-4">Ready to take the next step?</h2>
-      <a href="/apply" class="btn btn-dark btn-lg">Apply Now</a>
-    </div>
-  </section>
+<section class="bg-light text-center py-5">
+  <div class="container">
+    <h2 class="mb-4">Have Questions?</h2>
+    <a href="mailto:abigailelaho@gmail.com" class="btn btn-dark btn-lg">Contact Us</a>
+
+  </div>
+</section>
+
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 Abby Careers. All rights reserved.</p>
-  </footer>
-
+  <footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1">© 2025 Abby Careers. All rights reserved.</p>
+    <p class="mb-1">
+      <a href="mailto:abigailelaho@gmail.com" class="text-white text-decoration-underline">Contact Us</a>
+    </p>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS (optional for dropdowns, modals etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

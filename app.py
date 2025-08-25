@@ -9,6 +9,7 @@ def hello_world():
 @app.route('/apply')
 def apply():
     return render_template('apply.html')
+    
 
 @app.route('/thankyou')
 def thankyou():

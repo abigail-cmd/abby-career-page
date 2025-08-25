@@ -78,25 +78,18 @@ button[type="submit"]:hover,
 
 
 /* Hero Image Styling */
-.hero-image img {
+/* .hero-image img {
   width: 100%;
   max-width: 600px;
   height: auto;
   margin-top: 1rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Job Cards (if not using Bootstrap cards) */
-/* .job-card {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 } */
 
-
+footer a:hover {
+  color: #ddd;
+}
 
 
 /* Form Section */
@@ -143,4 +136,15 @@ button[type="submit"]:hover {
   text-align: center;
   padding: 2rem;
 }
+
+.social-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.social-icon:hover {
+  color: #ddd;
+  transform: scale(1.2);
+}
+
 
